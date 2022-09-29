@@ -13,6 +13,9 @@
   padding:0;
   box-sizing:border-box;
 }
+        html{
+            scroll-behavior: smooth;
+        }
 .navbar{
   display: flex;
   justify-content: center;
@@ -49,10 +52,10 @@
 <body>
 	<nav class ="navbar">
 		<ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">About Me</a></li>
-		<li><a href="#">Work Experience</a></li>
-		<li><a href="#">Contact Me</a></li>
+		<li><a href="#home">Home</a></li>
+		<li><a href="#about">About Me</a></li>
+		<li><a href="#work">Work Experience</a></li>
+		<li><a href="#contact">Contact Me</a></li>
 	</ul>
 </nav> 
 <style>
@@ -63,7 +66,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("mathangge.jpg");
 
 
-  height: 80%;
+  height: 45%;
 
 
   background-position: center;
@@ -87,14 +90,15 @@
     <p>I am a second year Software Engineering Student at Western University! I am passionate about making change to the world we live in! Keep scrolling to get to know me more!</p>
   </div>
 </div>
+    
     <style>
-        .aboutmt{
+        .about{
             width:100%;
             padding; 100px 0px;
-            background-color: beige;
+            background-color: floralwhite;
             
         }
-        .aboutme img{
+        .about img{
             height:auto;
             width:430px;
             
@@ -110,14 +114,14 @@
             align-items: center;
             justify-content: space-around;
         }
-        .aboutme-text h2{
-            color: white;
+        .about-text h2{
+            color: black;
             font-size:75px;
             text-transform: capitalize;
             margin-bottom: 20px;
         }
         
-        .aboutme-text p{
+        .about-text p{
             color: lightpink;
             letter-spacing: 1px;
             line-height: 28px;
@@ -130,12 +134,12 @@
     </style>
         
     
-<section class ="about-me">
+<section class ="about">
     <div class ="main">
     <img src ="IMG_3171.JPG">
         <div class="about-text">
             
-        <h1 id="about me">About Me</h1>
+
             <h2>I am Mathangge Varathan</h2>
             <p>I am 19 years old and I am from Markham Ontario. I attend Western Univeristy and I have just began by journey of becoming a software engineer.
 	 	  I hope to pursue a dual degree with Ivey HBA in the upcoming year. I am a very hard working and driven invidual. I pride myself on always perserving no matter the difficulty of a situation and to keep pushing forward. Some of my favourite hobbies are both reading and writting books, making friendship bracelets and watching movies!</p>
@@ -144,7 +148,7 @@
     </section>
     
  <style>
-   #workexprience{
+   #work{
 		display: flex;
 		flex-direction: column;
 		padding: 20px;
@@ -178,7 +182,7 @@
 	}
 	.box:hover{
 		background-position: left bottom;
-		color: white;
+		color: darkcyan;
 		border:none;
 		box-shadow: 0 0 55px rgb(0, 128, 128);
         
@@ -190,7 +194,7 @@
     </style>   
     
 
-<section id="workexperience">
+<section id="work">
     <h1 class="heading">Work Experience</h1>
     <div class="rows">
         <div class="box">
@@ -210,19 +214,16 @@
     <div class="rows">
         <div class="box">
             <h2>SWIMMING INSTRUCTOR</h2>
-            <p>I have been working on and off as a swimming instructor for the last two years as a result of the covid-19 pandemic. Being a swimming instructor has always been something I always wanted to do ever since I began taking swimming lessons. It was an amazing exprience to finally be able to teach students how to swim. As swimming is such a critical surivial skill I truly believe in the importance of being able to do so. As a swimming instructor some of my responsiblities included Organizing and taught swimming lessons to children aged 3 to 12 years increasing health and safety management in the community center environment by ensuring all employee and attendees remained under the swimming protocols and adapting to every child’s needs dependent on skill level and comfortability 
+            <p>I have been working on and off as a swimming instructor for the last two years as a result of the covid-19 pandemic. Being a swimming instructor has always been something I always wanted to do ever since I began taking swimming lessons. It was an amazing exprience to finally be able to teach students how to swim. As swimming is such a critical surivial skill I truly believe in the importance of being able to do so. As a swimming instructor some of my responsiblities included Organizing and taught swimming lessons to children aged 3 to 12 years increasing health and safety management in the community center environment by ensuring all employee and attendees remained under the swimming protocols and adapting to every child’s needs dependent on skill level and comfortability. 
  </p>
         </div>
     </div> 
     
 
     
-    
-
-
-    
     </section>
   <style>
+    
       * {
   box-sizing: border-box;
 }
@@ -271,7 +272,7 @@ input[type=submit]:hover {
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {
     width: 100%;
@@ -279,6 +280,7 @@ input[type=submit]:hover {
   }
 }
     </style>
+    <section id="contact">
     <div class="container">
   <div style="text-align:center">
     <h2>Get to Know me more</h2>
@@ -289,7 +291,7 @@ input[type=submit]:hover {
       <img src="IMG_5578.jpg" style="width:100%">
     </div>
     <div class="column">
-      <form action="/action_page.php">
+      <form action="/HI.html">
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
         <label for="lname">Last Name</label>
@@ -308,6 +310,7 @@ input[type=submit]:hover {
     </div>
   </div>
 </div>
+    </section>
     <style>
 .footer {
   position: fixed;
